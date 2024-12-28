@@ -13,7 +13,10 @@ export class SeedService {
 
     data.results.forEach( ({ name, url }) => {
       const segments = url.split('/');
-      const no: number = +segments[ segments.length -2 ];      
+      const no: number = +segments[ segments.length -2 ];
+      
+      console.log({ name, no });
+      
     });
     return data.results;
   }
